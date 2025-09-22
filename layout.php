@@ -1,3 +1,5 @@
+<?php include __DIR__ . "/config.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth overflow-x-hidden">
 
@@ -12,7 +14,9 @@
     <link rel="icon" type="image/x-icon" href="./public/images/favicon (1).png">
 
     <title>SMK Antartika 2 Sidoarjo</title>
-    <base href="/digiforward/">
+
+    <base href="<?php echo $base_url;?>">
+
 </head>
 
 <body class="">

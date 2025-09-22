@@ -1,3 +1,4 @@
+<base href="/digiforward/">
 <?php include './layout.php'; ?>
 
 <div class="h-40"></div>
@@ -6,7 +7,7 @@
     <!-- Hero Section -->
     <section class="w-full flex flex-col lg:flex-row border-b border-neutral-300 pb-16 gap-8">
         <div class="flex-1 flex flex-col justify-center items-center gap-8 text-center lg:text-left">
-            <h1 class="font-bold text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] max-w-170 leading-none">SMK ANTARTIKA 2 Sidoarjo</h1>
+            <h1 class="font-bold text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] max-w-170 leading-none">SMK ANTARTIKA 2 SIDOARJO</h1>
             <p class="max-w-170 text-neutral-700 font-semibold text-base sm:text-lg md:text-xl">The only platform that gives your team all the tools needed to work together on their awesome projects.</p>
         </div>
         <div class="flex-1 flex justify-center items-center p-4 sm:p-6 md:p-8">
@@ -208,9 +209,12 @@
 
     <!-- artikel section -->
     <section class="p-4 pt-16 w-full">
-        <div class="flex justify-between items-center">
-            <h1 class="text-3xl font-bold">Artikel Sekolah</h1>
-            <a href="#" class="text-xl">More articles →</a>
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <h1 class="text-2xl sm:text-3xl font-bold">Artikel Sekolah</h1>
+            <a href="#" class="text-base sm:text-lg md:text-xl hover:underline">
+                More articles →
+            </a>
         </div>
 
         <!-- gunakan grid biar responsif -->
@@ -260,7 +264,7 @@
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             <h1 class="text-2xl sm:text-3xl font-bold">Acara Sekolah</h1>
             <a href="#" class="text-base sm:text-lg md:text-xl hover:underline">
-                More articles →
+                View More →
             </a>
         </div>
 
@@ -311,6 +315,6 @@
     </section>
 
 </div>
-<section class="mt-5 bg-neutral-900 w-full flex justify-center items-center">
+<section class="mt-5 w-full flex justify-center items-center">
     <div class="container text-white"> <?php include './src/component/footer.php' ?> </div>
 </section>

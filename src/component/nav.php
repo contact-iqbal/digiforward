@@ -28,8 +28,10 @@
 
   <?php if (!isset($hideLinkto) || $hideLinkto === false): ?>
     <div class="w-full p-2 bg-[#102693]">
-      <div class="container flex text-neutral-200 flex-col items-end">
-        <ul class="flex gap-6">
+
+      <div class="flex text-neutral-200 flex-col items-center md:items-end">
+
+        <ul class="flex-inline md:flex gap-6">
           <li class="flex justify-center items-center gap-4">
             <i class="fa-solid fa-phone"></i>
             <p class="text-sm h-[100%]">(031) 1234567</p>
@@ -39,16 +41,18 @@
             <p class="text-sm h-[100%]">info@smkantartika2.sch.id</p>
           </li>
         </ul>
+
       </div>
+
     </div>
   <?php endif; ?>
 
-  <nav class="p-4 flex justify-between items-center bg-white shadow w-full">
+  <nav class="p-4 flex justify-between items-center bg-white shadow-lg w-full">
     <!-- Logo -->
-    <h1 class="flex items-center">
+    <a class="flex items-center" href="#">
       <img src="./public/images/favicon (1).png" width="60" alt="">
       <p class="w-2 leading-none font-extrabold text-lg">SMK ANTARTIKA 2</p>
-    </h1>
+    </a>
 
     <!-- Hamburger Button (mobile only) -->
     <button id="menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2 rounded focus:outline-none absolute right-1">
@@ -63,12 +67,12 @@
       <ul class="flex flex-col lg:flex-row gap-4 lg:gap-8 w-full lg:w-auto">
 
         <li class="w-full lg:w-auto text-left">
-          <a href="#" class="block hover:text-blue-700">Beranda</a>
+          <a href="#" class="block hover:text-blue-700 cursor-pointer">Beranda</a>
         </li>
 
         <!-- Jurusan -->
         <li class="relative dropdown w-full lg:w-auto text-left" data-id="jurusanDropdown">
-          <button class="menu-btn hover:text-blue-700">Jurusan <i class="fa-solid fa-angle-down text-sm"></i></button>
+          <button class="menu-btn hover:text-blue-700 cursor-pointer">Jurusan <i class="fa-solid fa-angle-down text-sm"></i></button>
           <ul id="jurusanDropdown"
             class="dropdown-menu absolute lg:left-0 lg:mt-2 hidden bg-white lg:shadow-lg lg:rounded-lg w-full lg:w-40 text-left opacity-0">
             <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">TKJ</a></li>
@@ -79,10 +83,10 @@
 
         <!-- Services -->
         <li class="relative dropdown w-full lg:w-auto text-left" data-id="servicesDropdown">
-          <button class="menu-btn hover:text-blue-700">Services <i class="fa-solid fa-angle-down text-sm"></i></button>
+          <button class="menu-btn hover:text-blue-700 cursor-pointer">Informasi <i class="fa-solid fa-angle-down text-sm"></i></button>
           <ul id="servicesDropdown"
             class="dropdown-menu absolute lg:left-0 lg:mt-2 hidden bg-white lg:shadow-lg lg:rounded-lg w-full lg:w-40 text-left opacity-0">
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Konsultasi</a></li>
+            <li><a href="./src/page/faq/tentang.php" class="block px-4 py-2 hover:bg-blue-100">FAQ</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Pelatihan</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Workshop</a></li>
           </ul>
@@ -90,24 +94,23 @@
 
         <!-- Contact -->
         <li class="relative dropdown w-full lg:w-auto text-left" data-id="contactDropdown">
-          <button class="menu-btn hover:text-blue-700">Contact <i class="fa-solid fa-angle-down text-sm"></i></button>
+          <button class="menu-btn hover:text-blue-700 cursor-pointer">Hubungi Kami <i class="fa-solid fa-angle-down text-sm"></i></button>
           <ul id="contactDropdown"
             class="dropdown-menu absolute lg:left-0 lg:mt-2 hidden bg-white lg:shadow-lg lg:rounded-lg w-full lg:w-40 text-left opacity-0">
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Email</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">WhatsApp</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Alamat</a></li>
+            <li><a href="./src/page/kotak-pertanyaan.php" class="block px-4 py-2 hover:bg-blue-100">Kotak Pertanyaan</a></li>
+            <li><a href="./src/page/kontak-kami.php" class="block px-4 py-2 hover:bg-blue-100">Kontak Kami</a></li>
           </ul>
         </li>
 
         <li class="w-full lg:w-auto text-left">
-          <a href="#" class="block hover:text-blue-700">PPDB</a>
+          <a href="#" class="block hover:text-blue-700 cursor-pointer">PPDB</a>
         </li>
       </ul>
     </div>
 
     <ul class="flex flex-col lg:flex-row gap-2 lg:gap-4 mt-4 lg:mt-0 w-full lg:w-auto">
       <li>
-        <a href="./src/page/sign_in.php"
+        <a href="./src/page/unduh.php"
           class="hidden w-full lg:w-auto lg:block text-[#2563eb] px-4 py-2 rounded-full border text-center hover:bg-blue-500 hover:text-white hover:shadow-lg">
           Unduh Data
         </a>
