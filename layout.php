@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="">
+<body>
     <?php if (!isset($hideNav) || $hideNav === false): ?>
         <?php include __DIR__ . '/src/component/nav.php'; ?>
     <?php endif; ?>

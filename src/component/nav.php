@@ -103,7 +103,7 @@
         </li>
 
         <li class="w-full lg:w-auto text-left">
-          <a href="#" class="block hover:text-blue-700 cursor-pointer">PPDB</a>
+          <a href="http://localhost/ppdb/" class="block hover:text-blue-700 cursor-pointer">PPDB</a>
         </li>
       </ul>
     </div>

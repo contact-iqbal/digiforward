@@ -1,6 +1,5 @@
 <?php
 include __DIR__ . '/../../layout.php';
-include __DIR__ . '/../../config-database.php';
 ?>
 
 <style>
