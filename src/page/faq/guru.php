@@ -72,7 +72,7 @@ include __DIR__ . '/../../../layout.php';
                     </button>
                     <div id="answer-1" class="pl-6 text-sm ml-0 md:ml-3 mt-4 text-neutral-600 overflow-hidden transition-all duration-500 ease max-h-40 opacity-100">
                         -
-                    </div>
+                    </div>z
                 </div>
 
                 <div>

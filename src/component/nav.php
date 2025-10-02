@@ -70,14 +70,22 @@
           <a href="#" class="block hover:text-blue-700 cursor-pointer">Beranda</a>
         </li>
 
-        <!-- Jurusan -->
+        <!-- program -->
         <li class="relative dropdown w-full lg:w-auto text-left" data-id="jurusanDropdown">
-          <button class="menu-btn hover:text-blue-700 cursor-pointer">Jurusan <i class="fa-solid fa-angle-down text-sm"></i></button>
+          <button class="menu-btn hover:text-blue-700 cursor-pointer">Program <i class="fa-solid fa-angle-down text-sm"></i></button>
           <ul id="jurusanDropdown"
             class="dropdown-menu absolute lg:left-0 lg:mt-2 hidden bg-white lg:shadow-lg lg:rounded-lg w-full lg:w-40 text-left opacity-0">
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">TKJ</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">AKL</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">RPL</a></li>
+            <li><a href="./src/page/profil-jurusan.php" class="block px-4 py-2 hover:bg-blue-100">Profil Jurusan</a></li>
+            <li><a href="./src/page/ekstrakurikuler.php" class="block px-4 py-2 hover:bg-blue-100">Ekstrakurikuler</a></li>
+          </ul>
+        </li>
+
+        <!-- alumni -->
+        <li class="relative dropdown w-full lg:w-auto text-left" data-id="alumniDropdown">
+          <button class="menu-btn hover:text-blue-700 cursor-pointer">Alumni <i class="fa-solid fa-angle-down text-sm"></i></button>
+          <ul id="alumniDropdown"
+            class="dropdown-menu absolute lg:left-0 lg:mt-2 hidden bg-white lg:shadow-lg lg:rounded-lg w-full lg:w-40 text-left opacity-0">
+            <li><a href="./src/page/alumni.php" class="block px-4 py-2 hover:bg-blue-100">Profil Alumni</a></li>
           </ul>
         </li>
 
@@ -86,8 +94,9 @@
           <button class="menu-btn hover:text-blue-700 cursor-pointer">Informasi <i class="fa-solid fa-angle-down text-sm"></i></button>
           <ul id="servicesDropdown"
             class="dropdown-menu absolute lg:left-0 lg:mt-2 hidden bg-white lg:shadow-lg lg:rounded-lg w-full lg:w-40 text-left opacity-0">
+            <li><a href="./src/page/berita.php" class="block px-4 py-2 hover:bg-blue-100">Berita Terbaru</a></li>
             <li><a href="./src/page/faq/tentang.php" class="block px-4 py-2 hover:bg-blue-100">FAQ</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Pelatihan</a></li>
+            <li><a href="./src/page/galeri.php" class="block px-4 py-2 hover:bg-blue-100">Galeri</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Workshop</a></li>
           </ul>
         </li>
